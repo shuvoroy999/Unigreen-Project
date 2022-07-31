@@ -1,0 +1,37 @@
+/* .bottom-dot {
+    background-color: #ccc;
+    padding: 0px 9px;
+    border-radius: 91px;
+    margin-left: 47%;
+    border: 2px solid transparent;
+    
+}
+.bottom-dot:hover {
+    background-color: #fff;
+    border: solid #7aba1e;
+    cursor: pointer;
+}
+.bottom-dot1 {
+    background-color: #ccc;
+    padding: 0px 9px;
+    border-radius: 91px;
+    margin-left: 1%;
+    border: 2px solid transparent;
+}
+.bottom-dot1:hover {
+    background-color: #fff;
+    border: solid #7aba1e;
+    cursor: pointer;
+}
+.bottom-dot2 {
+    background-color: #ccc;
+    padding: 0px 9px;
+    border-radius: 91px;
+    margin-left: 1%;
+    border: 2px solid transparent;
+}
+.bottom-dot2:hover {
+    background-color: #fff;
+    border:solid #7aba1e;
+    cursor: pointer;
+} */

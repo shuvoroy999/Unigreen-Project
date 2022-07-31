@@ -1,0 +1,1233 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@400;500&display=swap');
+
+/* font-family: 'Varela Round', sans-serif */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* ****************************Heading start******************************* */
+.header-top{
+    /* width: 100%; */
+    height: 40px;
+    display: flex;
+    background-color: #7aba1e;
+}
+.left-item{
+    width: 100%;
+    padding-left: 105px;
+    padding-top: 9px;
+}
+.left-item i{
+    margin-right: 5px;
+    font-weight: 350px;
+}
+.header-right{
+    float: right;
+    margin-right: 98px;
+}
+.header-right i{
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+.header-right i:hover{
+    color: black;
+}
+/* ****************************Heading end******************************* */
+/* ****************************Navber start******************************** */
+#sticker{
+    width: 100%;
+    height: 92px;
+    background-color: #fff;
+    display: flex;
+    /* border-bottom: 2px rgba(0, 0, 0, 0.618); */
+}
+.stick {
+	position:fixed;
+	top:0px;
+	z-index:999999999999;
+}
+.heder2-left {
+    width: 30%;
+}
+.heder2-left img {
+    padding-left: 35%;
+    padding-top: 24px;
+    height: 44.5px;
+}
+.header2-right {
+    width: 65%;
+    margin-left: 218px;
+}
+.menubar {
+    list-style: none;
+    padding: 0;
+    /* border-color: #e7e7e7; */
+    margin-top: 32px;
+}
+.menubar li {
+    float: left;
+    position: relative;
+}
+.menubar li a {
+    text-decoration: none;
+    color: #444;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    border-color: #e7e7e7;
+    padding: 6px 12px;
+    display: block;
+}
+.menubar li a:hover {
+    color: #699033;
+}
+.rivers {
+    float: right;
+    padding: 4px 8px;
+}
+.menubar li .dropdown-menu ul {
+    list-style: none;
+    position: absolute;
+    left: -99999px;
+    z-index: 5;
+    background-color: #fff;
+    padding-top: 31px;
+    padding-bottom: 5px;
+}
+.menubar li .dropdown-menu ul li {
+    float: none;
+    width: 230px;
+    margin-top: 20px;
+}
+.menubar li:hover ul {
+    left: 0;
+}
+.chevron-right {
+    float: right;
+    padding: 4px 8px;
+}
+.sub-dropdown {
+    display: none;
+}
+.sub:hover .sub-dropdown {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 230px;
+}
+.shopping {
+    width: 20%;
+    padding-top: 35px;
+    font-size: 22px;
+    position: relative;
+    color: #5a5a5a;
+}
+.shopping i{
+    padding-left:18px;  
+}
+.user {
+    padding: 7px;
+    clip-path: polygon(0 15%, 100% 15%, 100% 75%, 26% 77%, 0 100%, 0 75%, 0% 75%);
+    position: absolute;
+    top: 7px;
+    left: 27px;
+    background: #7aba1e;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* ****************************Navber end******************************** */
+
+/* **********************************salider stert**************************** */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+.mySlides {
+    display: none;
+}
+.fade img {
+    vertical-align: middle;   
+}
+/* Slideshow container */
+.slide-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 35px;
+    padding: 8px 0px;
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(147, 140, 140);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* .active, */
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+.swiper .swiper-pagination-bullet-active {
+    background: #fff;
+}
+/* **********************************salider end**************************** */
+
+/* *************************mission start*************************** */
+
+.our-mission{
+    width: 100%;
+    height: 600px;
+}
+.missionleft{
+    width: 43%;
+    float: left;
+    height: 420px;
+    position: relative;
+    animation-name: mission;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes mission{
+    from{left: -6%;}
+    to{left:0%}
+}
+.mission {
+    font-size: 30px;
+    margin-left: 6%;
+    margin-top: 4%;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom:4%;
+}
+.sub-taitle{
+    color: #1a1a1a;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    margin-left: 6%;
+    font-family: 'Varela Round', sans-serif;   
+}
+.para {
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-left: 6%;
+    margin-bottom:6%;
+    margin-top: -4%;
+}
+.button-left{
+    padding: 2% 4%;
+    text-decoration: none;
+    background-color: #7aba1e;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 26px;
+    margin-left: 6%;
+    font-size: 13px;
+    border: 2px solid #7aba1e;
+    transition: all 0.5s ease;
+}
+.button-left:hover {
+    background-color: #fff;
+    color: #7aba1e; 
+}
+.rightimg{
+    width: 48%;
+    float: right;
+    height: 620px;
+}
+.rightimg img {
+    width: 85%;
+    margin-top: 6%;
+    margin-left: -13%;  
+}
+/* *************************mission end*************************** */
+
+/* *******************************our history start***************************** */
+
+.our-history{
+    width: 100%;
+    height: 600px;
+    background-color:#f5f5f5;
+    margin-top: 50px;  
+}
+.history-left-img{
+    width: 50%;
+    float: left;
+}
+.history-left-img img{
+    padding-left: 60px;
+    height: 630px;
+    width: 50%px;
+    margin-top: -30px;
+    vertical-align: middle;
+    position: relative;
+    animation-name: history;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes history{
+    from{left:-60px}
+    to{left: 0px;}
+}
+.meddel-year{
+    width: 15%;
+    height: 600px;
+    background-color: #7aba1e;
+    color: #fff;
+    float: right;
+    z-index: 555;
+}
+.vr-line{
+    width: 2px; 
+    height:460px;  
+    background-color: rgb(255, 255, 255);
+    margin:70px 50px;
+    position: relative;
+}
+.vr-line p{
+    padding-top: 7px;
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    background-color: #7aba1e;
+    margin-top: 10px; 
+    margin-right: 10px;
+    margin-left: -23px;
+    z-index: 5555;
+    position: absolute;
+    cursor: pointer;
+}
+.history-right{
+    width: 50%;
+    height: 600px;
+    float: right;
+   
+}
+.history-titel{
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.history-para{
+    width: 530px;
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #5a5a5a;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+/* *******************************our history end***************************** */
+
+/* ********************our service start******************** */
+
+.our-service-section{
+    width: 100%;
+    height: 600px;
+}
+.service-title{
+    position: relative;
+    animation-name: service;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes service{
+    from{top:-80px ;}
+    to{top: 0px;}
+}
+.headding-service{
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 28px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+    margin-top: 80px;
+    position: relative;
+}
+.headding-service::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 49%;
+    width: 37px;
+    height: 5px;
+    background-color: #7aba1e;
+    border-radius: 10px;
+}
+.service-title p{
+    width: 56%;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 3%;
+}
+.service-card-aria{
+    width: 100%;
+}
+.card-aria{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 3% 3%;
+}
+.card {
+    width: 32%;
+    background-color: #f5f5f5;
+    height: 420px;
+}
+.card i {
+    margin-left: 35%;
+    font-size: 50px;
+    background-color: #fff;
+    padding: 35px 35px;
+    margin-top: 15%;
+    border-radius: 75px;
+    color: #7aba1e;
+}
+.our-service-taitle{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.our-service-para{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    color: #5a5a5a;
+    font-weight: 400;
+    margin-bottom: 55px;
+    cursor: context-menu;
+}
+.our-service-button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #7aba1e;
+    padding: 4% 8%;
+    margin-left:110px;
+    font-weight: 550;
+    border: 1px solid #7aba1e;
+    border-radius: 43px;
+    font-size: 13px;
+    transition:all 0.5s ease ;
+}
+.our-service-button:hover {
+    color: #7aba1e;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 550;
+}
+.dots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    background-color: rgb(147, 140, 140);
+    border: 1px transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* .active, */
+.dots:hover {
+    border:  #7aba1e ;
+    background-color: #717171;
+}
+
+/* ********************our service end******************** */
+
+/* *******************sample-pricing-section***************** */
+
+.sample-pricing-section{
+    height: 900px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.pricing-titles{
+    position: relative;
+    animation-name: pricing;
+    animation-delay: 6s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes pricing{
+    from{top:-110px ;}
+    to{top: 0px;}
+}
+
+.sample-pricing-hadding{
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 28px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+    margin-top: 110px;
+    position: relative;
+    padding-top: 71px;
+}
+.sample-pricing-hadding::after {
+    content: "";
+    position: absolute;
+    top: 115%;
+    left: 49%;
+    width: 37px;
+    height: 5px;
+    background-color: #7aba1e;
+    border-radius: 10px;
+}
+.pricing-para{
+    width: 56%;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 3%;
+}
+.sample-pricing-card{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1% 2%;
+}
+.price-card{
+    width: 32%;
+    background-color: #fff;
+    height: 580px;
+}
+.pricing-title{
+    color: #000;
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 44px;
+    margin-bottom: 23px;
+}
+.reat{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 31px;
+    color: #7aba1e;
+    text-align: center;
+    margin-left: -20px;
+}
+.per-day{
+    margin-left: 139px;
+    margin-top: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-bottom: 32px;
+}
+.pricing-detail{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    color: #5a5a5a;
+    text-align: center;
+    line-height: 35px;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+.customize-batton{
+    text-decoration: none;
+    color: #000;
+    background-color: #f5f5f5;
+    padding: 4% 10%;
+    margin-left: 29%;
+    border-radius: 43px;
+    font-size: 13px;
+    transition: all 0.5s ease;
+}
+.customize-batton:hover{
+    color: #fff;
+    background-color: #7aba1e;
+    cursor: pointer;
+}
+
+/* *******************sample-pricing-section end***************** */
+
+/* ********************Request A Queto section start***************** */
+
+.request{
+    height: 250px;
+    width: 100%;
+    background-color: #7aba1e;  
+}
+.request-card-aria{
+    width: 80%;
+    padding: 35px 135px;
+    display: flex;
+    justify-content: space-between;
+}
+.request-card{
+    margin:10px 10px;
+    width: 30%;
+}
+.sl{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+}
+.sl-title{
+    font-size: 20px;
+    color: #000;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    margin-top: 3%
+}
+.sl-para{
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 12px;
+    margin-top: 6%;
+}
+/* ********************Request A Queto section end***************** */
+
+/* ********************Important Features section start***************** */
+
+.important-features{
+    height: 800px;
+    width: 100%;
+}
+.important-features-wrapper{
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 10%;
+    /* background-color: #ccc; */
+    /* bgc ses a sada hoby */
+}
+.features-left{
+    float: left;
+    width: 65%;
+    background-color: #fff;
+}
+.features-title{
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+}
+.features-para{
+    margin-top: 3%;
+    padding-right: 10px;
+    line-height: 26px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+.features-left-inside{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.inside-left{
+    margin-top: 25px;
+    padding-right:5px ;
+}
+.left{
+    margin-top: 30px;
+}
+.left i{
+    color: #7aba1e;
+    font-size: 40px;
+}
+.features-laft-title{
+    float: right;
+    margin-right: 132px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+#support{
+    float: right;
+    margin-right: 172px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: 200;  
+}
+.features-laft-para{
+    padding-left: 60px;
+    margin-top: 3%;
+    line-height: 26px;
+    font-weight: 300;
+    color: #5a5a5a;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+/* ********************* */
+.inside-right{
+    margin-top: 25px;
+    padding-right:5px ;
+}
+.right{
+    margin-top: 30px;
+}
+.right i{
+    color: #7aba1e;
+    font-size: 40px;
+}
+.features-right-title{
+    float: right;
+    margin-right: 127px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.features-right-title1{
+    float: right;
+    margin-right: 88px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.features-right-title2{
+    float: right;
+    margin-right: 145px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.features-right-para{
+    padding-left: 60px;
+    margin-top: 3%;
+    line-height: 26px;
+    font-weight: 300;
+    color: #5a5a5a;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+.features-right{
+  width: 32%;
+  float: right;
+}
+.features-right-img1{
+    height: 350px;
+    width: 100%;
+    background: url(../img/boy\ -\ Copy.png);
+}
+.right-img1{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.368);
+    height: 350px;
+}
+.right-img1 i{
+    margin-top: 12%;
+    color: #fff;
+    font-size: 30px;
+    padding: 8% 8%;
+    border-radius: 50%;
+    border: 1px solid aliceblue;
+}
+.right1-title{
+    margin-top: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+}
+.right1-para{
+    margin-top:5% ;
+    margin-bottom: 5%;
+    line-height: 26px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+.read-more-btn{
+    padding: 4% 8%;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 200;
+    transition: all 0.5s ease;
+}
+.read-more-btn:hover{
+    background-color: #7aba1e;
+    color: #fff;
+}
+.features-right-img2{
+    height: 350px;
+    margin-top: 8%;
+    width: 100%;
+    background-image: url(../img/girl\ -\ Copy.png);  
+}
+.right-img2{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.368);
+    height: 350px;
+}
+
+/* ********************Important Features section end***************** */
+
+/* ********************Trusted Payment section start***************** */
+
+.trusted-payment-wrapper{
+    height: 450px;
+    width: 100%;
+    background: url('../img/boy.png') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.trusted-payment-card-aria{
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.trusted-payment-card-wrapper{
+    
+    height: 70%;
+    width: 84%;
+    display: flex;
+    margin-left: 106px;
+    padding-top: 70px;
+}
+.trusted-payment-card{
+    text-align: center;
+    padding-top: 45px;
+    background-color: #fff;
+}
+.trusted-payment-card i{
+    padding: 35px;
+    color: #7aba1e;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.trusted-payment-title{
+    margin-top: 6%;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.trusted-payment-title:hover{
+    color: #7aba1e;
+}
+.trusted-payment-para{
+    margin-top:5% ;
+    padding: 0px 30px;
+    line-height: 26px;
+    font-weight: 200;
+    color:  #5a5a5a;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;   
+}
+/* ********************Trusted Payment section end***************** */
+
+/* ********************Trusted Payment section end***************** */
+
+.our-team-wrapper{
+    height: 800px;
+    width: 100%;
+}
+.team-headding{
+    margin-top: 70px;
+    text-align: center;
+}
+.team-headding{
+    position: relative;
+    animation-name: team;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes team{
+    from{top:-70px ;}
+    to{top: 0px;}
+}
+.team-title{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.team-title::after{
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    width: 37px;
+    height: 5px;
+    background-color: #7aba1e;
+    border-radius: 10px;
+}
+.team-headding-para{
+    width: 56%;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 3%;
+}
+.team-card-wrapper{
+    height: 65%;
+    width: 84%;
+    display: flex;
+    margin-left: 106px;
+    padding-top: 50px;
+}
+.team-card{
+    height: 84%;
+    width: 31%;
+    text-align: center;
+    padding-top: 46px;
+    background-color: #f8f8f8;
+    }
+.team-card img{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+}
+.name{
+    margin-top: 6%;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.name:hover{
+    color: #7aba1e;
+}
+.deg{
+    margin-top:2% ;
+    padding: 0px 30px;
+    line-height: 26px;
+    font-weight: 200;
+    color:  #5a5a5a;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+.team-card i{
+    margin-top: 20px;
+    padding: 15px 15px;
+    background-color: #fff;
+    color: #818181;
+    font-size: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.team-card i:hover{
+    color: #fff;
+    background-color: #7aba1e;
+}
+.team-btn{
+    text-decoration: none;
+    margin-left: 45%;
+    padding: 12px 20px;
+    border: 1px solid #7aba1e;;
+    border-radius: 20px;
+    background-color: #7aba1e;
+    color:#fff;
+    font-size: 12px;
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.team-btn:hover{
+    background-color: #fff;
+    color: #7aba1e;
+}
+/* ********************Trusted Payment section end***************** */
+
+/* ********************Trusted Payment section end***************** */
+
+.get-in-touch{
+    height: 100px;
+    width: 100%;
+    background-color: #7aba1e;
+}
+.touch-wrapper{
+    width: 84%;
+    margin-left: 104px;
+    /* display: flex;
+    justify-content: center; */
+}
+.touch-hedding{
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 38px;
+    margin-right: 28px;
+    float: left;
+
+}
+.touch-btn{
+    float: right;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 12px 25px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 13px;
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.touch-btn:hover{
+    background-color: #7aba1e;
+    color: #fff;
+}
+
+/* ********************Trusted Payment section end***************** */
+
+/* ********************Info futter section start***************** */
+
+.info-futter{
+    height: 550px;
+    width: 100%;
+    background-color: #131812;
+}
+.info-wrapper{
+    width: 84%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+    margin-left: 106px;
+    color: #c2c2c2;
+}
+.info-address{
+    width: 21%;
+}
+.info-logo{
+    width: 58%;
+    margin-bottom: 10%;
+}
+.info-para{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #c2c2c2;
+}
+.addressM{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 5%;
+}
+.addressS{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #c2c2c2; 
+}
+.info-our-service{
+    width: 21%; 
+}
+.info-service-title{
+    margin-bottom: 15%;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 300;
+}
+.service-info{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #c2c2c2;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.service-info:hover{
+    color: #7aba1e;
+}
+.info-twite{
+    width: 21%;
+}
+.info-twite-title{
+    margin-bottom: 17%;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 300;
+}
+.twite-para{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.twite-para:hover{
+    color: #7aba1e;
+}
+.twite-time{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #7a7a7a;
+    margin-bottom: 10%;
+    /* padding-left: 20px; */
+}
+.info-insta-feed{
+    width: 21%;
+}
+.info-insta-feed-title{
+    margin-bottom: 20%;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 300;
+}
+.insta-pic img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 3px;
+}
+.info-icon{
+    text-align: center;
+    margin-top: 40px;
+      
+}
+.info-icon i{
+    border-radius: 50%;
+    padding: 15px 15px;
+    background: #2a2e2a;
+    color: #fff;  
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.info-icon i:hover{
+    background-color: #7aba1e;
+    color: #fff;
+}
+/* ********************Info futter section end***************** */
+
+/* ********************futter section end***************** */
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #080D07;
+}
+.footerp{
+    padding-top: 20px;
+    text-align: center;
+    color: #a7a7a7;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+}
+/* ********************futter section end***************** */
